@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.box-container {
+    position: relative;
+    width: 100%;
+}
+
+img.box {
+    opacity: 80%;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+
+.box.triggered {
+    background-color: white;
+    z-index: 3;
+}
+
+img.box.triggered {
+    opacity: 100%;
+}
+
+
+.box.falling {
+    cursor: default;
+}
