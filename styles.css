@@ -14,7 +14,7 @@ body {
 }
 
 img.box {
-    opacity: 80%;
+    /* opacity: 80%; */
 }
 
 .box {
@@ -29,7 +29,17 @@ img.box {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.5s, opacity 0.5s;
+    transition: background-color 0.5s, opacity 0.5s, filter 0.5s;
+}
+
+.box.cueball {
+    filter: sepia(100%) saturate(300%);
+    transition: all 0.2s;
+}
+
+img.box.cueball {
+    filter: contrast(500%) brightness(90%) sepia(90%) saturate(200%);
+    transition: all 0.2s;
 }
 
 .box.triggered {

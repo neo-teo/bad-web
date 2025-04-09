@@ -1,6 +1,8 @@
 // Keep track of which elements have physics bodies
 const elementsWithBodies = new Map();
 
+world.gravity.y = 0.5;
+
 // Add walls and floor
 const wallThickness = 50;
 const floor = Bodies.rectangle(window.innerWidth / 2, window.innerHeight + wallThickness / 2, window.innerWidth, wallThickness, {

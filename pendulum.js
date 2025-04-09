@@ -1,6 +1,8 @@
 // Keep track of which elements have physics bodies
 const elementsWithBodies = new Map();
 
+world.gravity.y = 0.5;
+
 // Add hover event listeners
 boxes.forEach((el, index) => {
     el.addEventListener('mouseenter', () => {

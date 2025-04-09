@@ -8,13 +8,9 @@ const { Engine, World, Bodies, Runner, Body, Composite, Constraint } = Matter;
 const engine = Engine.create();
 const world = engine.world;
 
-// Set gravity (default is already { y: 1 })
-world.gravity.y = 0.5;
-
 // Create a runner to continuously update the physics
 const runner = Runner.create();
 Runner.run(runner, engine);
-
 
 /**
  * INITIAL BOX POSITIONS
